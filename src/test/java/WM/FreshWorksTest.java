@@ -69,12 +69,7 @@ public class FreshWorksTest {
 		assertEquals(driver.getTitle(), "A fresh approach to customer engagement");
 	}
 
-	@Test(priority = 3)
-	public void getFooterLinksTest() {
-		List<WebElement> footerLinksList = driver.findElements(By.cssSelector("ul.footer-nav li a"));
-		footerLinksList.forEach(ele -> System.out.println(ele.getText()));
-		assertEquals(footerLinksList.size(), 35);
-	}
+	
 
 	@AfterMethod
 	public void tearDown() {
